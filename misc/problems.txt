@@ -1,0 +1,5 @@
+// === completed
+
+// 1. cannot get the navbar to render
+// 2. the commented search plugin and its script creates two search bars
+// 3. Cannot get compiled scss main.css linked to html. However, cover.css which was not compiled, works
