@@ -1,5 +1,8 @@
 <!-- _navbar.md -->
 
 * [Home](/)
-* [Test](test.md)
-* [Random](random-page.md)
+* JS Apps
+  * [Frontend](js_apps/frontend)
+  Hello this is a short description about this section
+  * [Nextgen](js_apps/nextgen)
+  This is another short description about this section

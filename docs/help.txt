@@ -1,2 +1,0 @@
-// START SERVER - while in home dir
-run server = docsify serve docs
