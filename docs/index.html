@@ -7,11 +7,10 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css" title="docsify-darklight-theme" type="text/css"/>
   <link type="text/css" rel="stylesheet" href="./styles/main.css">
-
-  <!-- <link type="text/css" rel="stylesheet" href="./styles/cover.css"> -->
 </head>
-<body>
+<body class="body-container light">
   <div id="app"></div>
 
   <script>
@@ -20,32 +19,47 @@
       repo: '',
       // relativePath: true,
       loadSidebar: true,
-      subMaxLevel: 3,
+      subMaxLevel: 5,
+      sidebarDisplayLevel: 1, // set sidebar display level
       loadNavbar: true,
       mergeNavbar: true,
+      collapseNavbar: true,
+
+      /* Cover page shenanigans */
       // coverpage: true,
-      coverpage: 'test-cover.html',
+      // coverpage: 'test-cover.html',
       // onlyCover: true,
   
       // Search config
       search: {
         maxAge: 86400000, // Expiration time, the default one day
-        paths: 'auto', // or 'auto'
+        paths: 'auto',
         placeholder: 'Type to search',
         noData: 'No Results!',
-        hideOtherSidebarContent: false, // whether or not to hide other sidebar content
+        hideOtherSidebarContent: false,
       },
-
-
-
     }
-
-
-
   </script>
 
   <!-- Imports -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>  <!-- https://github.com/imyelo/docsify-pagination#readme -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script> <!-- https://github.com/iPeng6/docsify-sidebar-collapse -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js" type="text/javascript"></script>
+
+  <!-- Working on a sticky nav, need to make some changes before it can work with dark mode - the btn declaration is not being read. Prob loading too fast for the import above -->
+  <!-- <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const btnDarkLight = document.getElementById('docsify-darklight-theme');
+      const bodyContainer = document.querySelector('.body-container');
+
+      console.log(btnDarkLight)
+
+      btnDarkLight.addEventListener('click', () => {
+        bodyContainer.classList.toggle('dark');
+      });
+    });
+  </script> -->
 </body>
 </html>

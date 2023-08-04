@@ -1,4 +1,0 @@
-Full Documentation here - https://docsify.js.org/
-
-- The following ignores the selected header to be added into the sidebar when subMaxLevel is set
-<!-- {docsify-ignore} --> and <!-- {docsify-ignore-all} -->

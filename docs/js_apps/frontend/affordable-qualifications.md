@@ -5,7 +5,7 @@ The affordable qualifications application is a UI table component that displays 
 ![completed table](../../media/js_apps/frontend/affordable-qualifications/final.png)
 
 
-# How do we add data into this app?
+## How do we add data into this app?
 
 Valid data is the first thing we need to provide to the application for it to work properly. The data it uses can be broken into two parts: A **qualification set**, and **qualifications.**
 
